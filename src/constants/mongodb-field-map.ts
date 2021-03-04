@@ -1,5 +1,6 @@
 export const mongoDbFieldMap = {
   symbol: (fundamentals) => fundamentals.symbol,
+  name: (fundamentals) => fundamentals.name,
   marketCap: (fundamentals) =>
     validateNumberField(fundamentals.quote_table?.marketCap),
   trailingPE: (fundamentals) =>

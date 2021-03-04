@@ -17,6 +17,12 @@ export default class IexCloudApi extends RESTDataSource {
     });
   }
 
+  async getCompany(symbol: string) {
+    return this.get(`stock/${symbol}/company`, "", {
+      cacheOptions: { ttl: durations.YEAR_IN_SECONDS },
+    });
+  }
+
   async getLogo(symbol: string) {
     return this.get(`stock/${symbol}/logo`);
   }

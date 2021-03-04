@@ -17,6 +17,12 @@ export const resolvers = {
       );
       return result;
     },
+    company: async (_, { symbol }, { dataSources }) => {
+      const result = await (dataSources.iexCloudApi as IexCloudApi).getCompany(
+        symbol
+      );
+      return result;
+    },
     historicalPrices: async (_, { symbol, range }, { dataSources }) => {
       switch (range) {
         case "1d":

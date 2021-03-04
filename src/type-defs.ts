@@ -4,6 +4,7 @@ export const typeDefs = gql`
   type Query {
     symbols: [Symbol!]!
     symbol(symbol: String!): Symbol
+    company(symbol: String!): Company
     historicalPrices(symbol: String!, range: String!): [HistoricalPrice]
     news(symbol: String!, last: Int!): [News]
     indicators(filter: String): [Indicator!]!
@@ -38,6 +39,7 @@ export const typeDefs = gql`
   }
 
   type Fundamentals {
+    name: String
     symbol: String
     marketCap: Float
     trailingPE: Float
@@ -149,5 +151,41 @@ export const typeDefs = gql`
     type: String
     description: String
     investopediaUrl: String
+    valueType: String
+  }
+
+  type Company {
+    symbol: String # Ticker of the company
+    companyName: String # Name of the company
+    employees: Float # Number of employees
+    exchange: String # Refers to Exchange using https://sandbox.iexapis.com/stable/ref-data/exchanges?token=Tsk_5efc4d35d48d43b096a4c4a36980dfbc
+    industry: String # Refers to the industry the company belongs to
+    website: String # Website of the company
+    description: String # Description for the company
+    CEO: String # Name of the CEO of the company
+    securityName: String # Name of the security
+    issueType: String # Refers to the common issue type of the stock.
+    # ad - ADR
+    # cs - Common Stock
+    # cef - Closed End Fund
+    # et - ETF
+    # oef - Open Ended Fund
+    # ps - Preferred Stock
+    # rt - Right
+    # struct - Structured Product
+    # ut - Unit
+    # wi - When Issued
+    # wt - Warrant
+    # empty - Other
+    sector: String # Refers to the sector the company belongs to.
+    primarySicCode: String # Primary SIC Code for the symbol (if available)
+    tags: [String] # An array of Strings used to classify the company.
+    address: String # Street address of the company if available
+    address2: String # Street address of the company if available
+    state: String # State of the company if available
+    city: String # City of the company if available
+    zip: String # Zip code of the company if available
+    country: String # Country of the company if available
+    phone: String # Phone number of the company if available
   }
 `;
