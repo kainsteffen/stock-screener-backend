@@ -3,7 +3,7 @@ export const mongoDbFieldMap = {
   name: (fundamentals) => fundamentals.name,
   marketCap: (fundamentals) =>
     validateNumberField(fundamentals.quote_table?.marketCap),
-  trailingPE: (fundamentals) =>
+  trailingPe: (fundamentals) =>
     validateNumberField(fundamentals.stats?.trailingPE),
 };
 

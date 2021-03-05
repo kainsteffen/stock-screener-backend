@@ -9,7 +9,7 @@ export const typeDefs = gql`
     news(symbol: String!, last: Int!): [News]
     indicators(filter: String): [Indicator!]!
     fundamentals(symbol: String!): Fundamentals
-    find(filter: String): [Fundamentals!]!
+    fundamentalsFilter(filter: String): [Fundamentals!]!
   }
 
   type Mutation {
@@ -42,7 +42,7 @@ export const typeDefs = gql`
     name: String
     symbol: String
     marketCap: Float
-    trailingPE: Float
+    trailingPe: Float
   }
 
   type HistoricalPrice {

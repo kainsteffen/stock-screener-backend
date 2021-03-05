@@ -108,7 +108,7 @@ export const resolvers = {
         return result;
       }
     },
-    find: async (_, { filter }, { dataSources }, info) => {
+    fundamentalsFilter: async (_, { filter }, { dataSources }, info) => {
       let parsedFilter;
       try {
         parsedFilter = JSON.parse(filter);
