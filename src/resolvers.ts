@@ -1,3 +1,4 @@
+import { UserInputError } from "apollo-server-express";
 import { parseResolveInfo } from "graphql-parse-resolve-info";
 import { mongoDbFieldMap } from "./constants/mongodb-field-map";
 import IexCloudApi from "./data-sources/iex-cloud-rest-api/iex-cloud";
@@ -108,21 +109,29 @@ export const resolvers = {
         return result;
       }
     },
-    fundamentalsFilter: async (_, { filter }, { dataSources }, info) => {
+    strategyResults: async (
+      _,
+      { filter, cursor, limit },
+      { dataSources },
+      info
+    ) => {
       let parsedFilter;
       try {
         parsedFilter = JSON.parse(filter);
       } catch (e) {
-        parsedFilter = {};
+        throw new UserInputError("Filter not JSON-parseable");
       }
-      const fundamentals = await (dataSources.fundamentals as Fundamentals)
+      const mdbCursor = await (dataSources.fundamentals as Fundamentals)
         .getFundamentals(parsedFilter)
-        .toArray();
+        .skip(cursor)
+        .limit(limit);
 
+      const fundamentals = await mdbCursor.toArray();
       const parsedInfo = parseResolveInfo(info);
       if (parsedInfo) {
         const fields = Object.keys(parsedInfo.fieldsByTypeName.Fundamentals);
-        const transformed = fundamentals.map((fundamental) => {
+        // Lift nested mongodb fields to top of object
+        const mappedFundamentals = fundamentals.map((fundamental) => {
           let result = {};
           for (let i = 0; i < fields.length; i++) {
             const field = fields[i];
@@ -132,7 +141,7 @@ export const resolvers = {
           }
           return result;
         });
-        return transformed;
+        return mappedFundamentals;
       }
       return fundamentals;
     },
