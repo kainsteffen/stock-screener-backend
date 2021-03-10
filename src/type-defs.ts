@@ -42,6 +42,7 @@ export const typeDefs = gql`
     name: String
     symbol: String
     fiftyTwoWeekRange: String
+    forwardDividendYield: Float
     marketCap: Float
     trailingPe: Float
   }
