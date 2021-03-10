@@ -45,7 +45,7 @@ export const typeDefs = gql`
     fiftyTwoWeekRange: String
     forwardDividendYield: Float
     marketCap: Float
-    trailingPe: Float
+    trailingPE: Float
   }
 
   type HistoricalPrice {

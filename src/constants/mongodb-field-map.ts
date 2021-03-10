@@ -6,7 +6,7 @@ export const mongoDbFieldMap = {
     fundamentals.quote_table.forwardDividendYield,
   marketCap: (fundamentals) =>
     validateNumberField(fundamentals.quote_table?.marketCap),
-  trailingPe: (fundamentals) =>
+  trailingPE: (fundamentals) =>
     validateNumberField(fundamentals.stats?.trailingPE),
 };
 
