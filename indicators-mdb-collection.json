@@ -136,14 +136,6 @@
     "valueType": "number"
   },
   {
-    "key": "percentageHeldbyInsiders",
-    "name": "Percentage Held By Insiders",
-    "type": "threshold",
-    "description": "If you're an investor, it pays to know what the company's owners and most important shareholders are doing. By watching the trading activity of corporate insiders and large institutional investors, it's easier to get a sense of a stock's prospects. While insider or institutional ownership on its own is not necessarily a buy or sell signal, it certainly offers a handy first screen in the search for a good investment.",
-    "investopediaUrl": "https://www.investopedia.com/articles/stocks/05/042605.asp",
-    "valueType": "number"
-  },
-  {
     "key": "percentageHeldByInstitutions",
     "name": "Percentage Held By Institutions",
     "type": "threshold",
@@ -170,14 +162,6 @@
   {
     "key": "shortPercentageOfFloat",
     "name": "Short % of Float",
-    "type": "threshold",
-    "description": "A short, or a short position, is created when a trader sells a security first with the intention of repurchasing it or covering it later at a lower price. A trader may decide to short a security when she believes that the price of that security is likely to decrease in the near future. There are two types of short positions: naked and covered. A naked short is when a trader sells a security without having possession of it.",
-    "investopediaUrl": "https://www.investopedia.com/terms/s/short.asp",
-    "valueType": "number"
-  },
-  {
-    "key": "shortPercentageOfSharesOutstanding",
-    "name": "Short % of Shares Outstanding",
     "type": "threshold",
     "description": "A short, or a short position, is created when a trader sells a security first with the intention of repurchasing it or covering it later at a lower price. A trader may decide to short a security when she believes that the price of that security is likely to decrease in the near future. There are two types of short positions: naked and covered. A naked short is when a trader sells a security without having possession of it.",
     "investopediaUrl": "https://www.investopedia.com/terms/s/short.asp",
