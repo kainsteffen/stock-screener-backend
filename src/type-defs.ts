@@ -7,6 +7,7 @@ export const typeDefs = gql`
     company(symbol: String!): Company
     historicalPrices(symbol: String!, range: String!): [HistoricalPrice]
     news(symbol: String!, last: Int!): [News]
+    logo(symbol: String!): Logo
     indicators(filter: String): [Indicator!]!
     fundamentals(symbol: String!): Fundamentals
     strategyResults(filter: String, cursor: Int, limit: Int): [Fundamentals!]!

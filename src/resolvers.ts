@@ -80,6 +80,12 @@ export const resolvers = {
       );
       return news;
     },
+    logo: async (_, { symbol }, { dataSources }) => {
+      const logo = await (dataSources.iexCloudApi as IexCloudApi).getLogo(
+        symbol
+      );
+      return logo;
+    },
     indicators: async (_, { filter }, { dataSources }) => {
       let parsedFilter;
       try {
