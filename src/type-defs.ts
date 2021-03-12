@@ -8,6 +8,7 @@ export const typeDefs = gql`
     historicalPrices(symbol: String!, range: String!): [HistoricalPrice]
     news(symbol: String!, last: Int!): [News]
     logo(symbol: String!): Logo
+    keyStats(symbol: String!): KeyStats
     indicators(filter: String): [Indicator!]!
     fundamentals(symbol: String!): Fundamentals
     strategyResults(filter: String, cursor: Int, limit: Int): [Fundamentals!]!
@@ -46,6 +47,42 @@ export const typeDefs = gql`
     forwardDividendYield: Float
     marketCap: Float
     trailingPE: Float
+  }
+
+  # https://iexcloud.io/docs/api/#key-stats
+  type KeyStats {
+    companyName: String
+    marketcap: Float
+    week52high: Float
+    week52low: Float
+    week52highSplitAdjustOnly: Float
+    week52lowSplitAdjustOnly: Float
+    week52change: Float
+    sharesOutstanding: Float
+    float: Float
+    avg10Volume: Float
+    avg30Volume: Float
+    day200MovingAvg: Float
+    day50MovingAvg: Float
+    employees: Float
+    ttmEPS: Float
+    ttmDividendRate: Float
+    dividendYield: Float
+    nextDividendDate: String
+    exDividendDate: String
+    nextEarningsDate: String
+    peRatio: Float
+    beta: Float
+    maxChangePercent: Float
+    year5ChangePercent: Float
+    year2ChangePercent: Float
+    year1ChangePercent: Float
+    ytdChangePercent: Float
+    month6ChangePercent: Float
+    month3ChangePercent: Float
+    month1ChangePercent: Float
+    day30ChangePercent: Float
+    day5ChangePercent: Float
   }
 
   type HistoricalPrice {
@@ -157,38 +194,27 @@ export const typeDefs = gql`
     valueType: String
   }
 
+  # https://iexcloud.io/docs/api/#company
   type Company {
-    symbol: String # Ticker of the company
-    companyName: String # Name of the company
-    employees: Float # Number of employees
-    exchange: String # Refers to Exchange using https://sandbox.iexapis.com/stable/ref-data/exchanges?token=Tsk_5efc4d35d48d43b096a4c4a36980dfbc
-    industry: String # Refers to the industry the company belongs to
-    website: String # Website of the company
-    description: String # Description for the company
-    CEO: String # Name of the CEO of the company
-    securityName: String # Name of the security
-    issueType: String # Refers to the common issue type of the stock.
-    # ad - ADR
-    # cs - Common Stock
-    # cef - Closed End Fund
-    # et - ETF
-    # oef - Open Ended Fund
-    # ps - Preferred Stock
-    # rt - Right
-    # struct - Structured Product
-    # ut - Unit
-    # wi - When Issued
-    # wt - Warrant
-    # empty - Other
-    sector: String # Refers to the sector the company belongs to.
-    primarySicCode: String # Primary SIC Code for the symbol (if available)
-    tags: [String] # An array of Strings used to classify the company.
-    address: String # Street address of the company if available
-    address2: String # Street address of the company if available
-    state: String # State of the company if available
-    city: String # City of the company if available
-    zip: String # Zip code of the company if available
-    country: String # Country of the company if available
-    phone: String # Phone number of the company if available
+    symbol: String
+    companyName: String
+    employees: Float
+    exchange: String
+    industry: String
+    website: String
+    description: String
+    CEO: String
+    securityName: String
+    issueType: String
+    sector: String
+    primarySicCode: String
+    tags: [String]
+    address: String
+    address2: String
+    state: String
+    city: String
+    zip: String
+    country: String
+    phone: String
   }
 `;

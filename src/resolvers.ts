@@ -86,6 +86,12 @@ export const resolvers = {
       );
       return logo;
     },
+    keyStats: async (_, { symbol }, { dataSources }) => {
+      const keyStats = await (dataSources.iexCloudApi as IexCloudApi).getKeyStats(
+        symbol
+      );
+      return keyStats;
+    },
     indicators: async (_, { filter }, { dataSources }) => {
       let parsedFilter;
       try {
