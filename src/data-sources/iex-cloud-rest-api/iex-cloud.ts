@@ -31,6 +31,10 @@ export default class IexCloudApi extends RESTDataSource {
     return this.get(`stock/${symbol}/stats`);
   }
 
+  async getReferenceData(fragment: string) {
+    return this.get(`search/${fragment}`);
+  }
+
   async getQuote(symbol: string) {
     return this.get(`stock/${symbol}/quote`, "", {
       cacheOptions: { ttl: durations.FIFTEEN_MINUTES_SECONDS },

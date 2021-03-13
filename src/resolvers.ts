@@ -92,6 +92,18 @@ export const resolvers = {
       );
       return keyStats;
     },
+    referenceData: async (_, { fragment }, { dataSources }) => {
+      const referenceData = (
+        await (dataSources.iexCloudApi as IexCloudApi).getReferenceData(
+          fragment
+        )
+      ).filter(
+        (data) =>
+          (data.securityType === "ad" || data.securityType === "cs") &&
+          (data.exchange === "NYS" || data.exchange === "NAS")
+      );
+      return referenceData;
+    },
     indicators: async (_, { filter }, { dataSources }) => {
       let parsedFilter;
       try {

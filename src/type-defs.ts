@@ -9,6 +9,7 @@ export const typeDefs = gql`
     news(symbol: String!, last: Int!): [News]
     logo(symbol: String!): Logo
     keyStats(symbol: String!): KeyStats
+    referenceData(fragment: String!): [ReferenceData!]!
     indicators(filter: String): [Indicator!]!
     fundamentals(symbol: String!): Fundamentals
     strategyResults(filter: String, cursor: Int, limit: Int): [Fundamentals!]!
@@ -38,6 +39,16 @@ export const typeDefs = gql`
     news: News
     quote: Quote
     historicalPrices: [HistoricalPrice]
+  }
+
+  type ReferenceData {
+    symbol: String
+    cik: String
+    securityName: String
+    securityType: String
+    region: String
+    exchange: String
+    sector: String
   }
 
   type Fundamentals {
