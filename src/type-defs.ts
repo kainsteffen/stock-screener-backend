@@ -44,9 +44,56 @@ export const typeDefs = gql`
     name: String
     symbol: String
     fiftyTwoWeekRange: String
-    forwardDividendYield: Float
+    # ------------------------------------
+    # Used as strategy indicators
     marketCap: Float
     trailingPE: Float
+    forwardPE: Float
+    pegRatio: Float
+    priceToSales: Float
+    priceToBook: Float
+    eps: Float
+    enterpriseValue: Float
+    beta5YMonthly: Float
+    enterPriseValueToRevenue: Float
+    enterPriseValueToEbitda: Float
+    avgVol3Month: Float
+    avgVol10Day: Float
+    avgVolume: Float
+    sharesOutstanding: Float
+    float: Float
+    percentageHeldbyInsiders: Float
+    percentageHeldByInstitutions: Float
+    sharesShort: Float
+    shortRatio: Float
+    shortPercentageOfFloat: Float
+    shortPercentageOfSharesOutstanding: Float
+    forwardAnnualDividendRate: Float
+    forwardAnnualDividendYield: Float
+    trailingAnnualDividendRate: Float
+    trailingAnnualDividendYield: Float
+    fiveYearAverageDividendYield: Float
+    payOutRatio: Float
+    profitMargin: Float
+    operatingMargin: Float
+    returnOnAssets: Float
+    returnOnEquity: Float
+    revenue: Float
+    revenuePerShare: Float
+    quarterlyRevenueGrowth: Float
+    grossProfit: Float
+    ebitda: Float
+    netIncomeAviToCommon: Float
+    dilutedEps: Float
+    quarterlyEarningsGrowth: Float
+    totalCash: Float
+    totalCashPerShare: Float
+    totalDebt: Float
+    totalDebtPerEquity: Float
+    currentRatio: Float
+    bookValuePerShare: Float
+    operatingCashFlow: Float
+    leveredFreeCashFlow: Float
   }
 
   # https://iexcloud.io/docs/api/#key-stats
