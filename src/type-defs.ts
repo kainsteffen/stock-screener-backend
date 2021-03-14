@@ -12,7 +12,8 @@ export const typeDefs = gql`
     referenceData(fragment: String!): [ReferenceData!]!
     indicators(filter: String): [Indicator!]!
     fundamentals(symbol: String!): Fundamentals
-    strategyResults(filter: String, cursor: Int, limit: Int): [Fundamentals!]!
+    manyFundamentals(filter: String, cursor: Int, limit: Int): [Fundamentals!]!
+    searchSymbols(searchTerm: String): [Fundamentals!]!
   }
 
   type Mutation {

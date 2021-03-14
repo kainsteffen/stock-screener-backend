@@ -133,7 +133,7 @@ export const resolvers = {
         return result;
       }
     },
-    strategyResults: async (
+    manyFundamentals: async (
       _,
       { filter, cursor, limit },
       { dataSources },
@@ -168,6 +168,20 @@ export const resolvers = {
         return mappedFundamentals;
       }
       return fundamentals;
+    },
+    searchSymbols: async (_, { searchTerm }, { dataSources }) => {
+      const filter = {
+        $or: [
+          { symbol: { $regex: searchTerm, $options: "i" } },
+          { name: { $regex: searchTerm, $options: "i" } },
+        ],
+      };
+      const mdbCursor = await (dataSources.fundamentals as Fundamentals)
+        .getFundamentals(filter)
+        .skip(0)
+        .limit(10);
+      const results = await mdbCursor.toArray();
+      return results;
     },
   },
   Mutation: {
