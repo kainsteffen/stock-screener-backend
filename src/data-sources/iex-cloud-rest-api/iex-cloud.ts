@@ -24,15 +24,21 @@ export default class IexCloudApi extends RESTDataSource {
   }
 
   async getLogo(symbol: string) {
-    return this.get(`stock/${symbol}/logo`);
+    return this.get(`stock/${symbol}/logo`, "", {
+      cacheOptions: { ttl: durations.YEAR_IN_SECONDS },
+    });
   }
 
   async getKeyStats(symbol: string) {
-    return this.get(`stock/${symbol}/stats`);
+    return this.get(`stock/${symbol}/stats`, "", {
+      cacheOptions: { ttl: durations.MONTH_IN_SECONDS },
+    });
   }
 
   async getReferenceData(fragment: string) {
-    return this.get(`search/${fragment}`);
+    return this.get(`search/${fragment}`, "", {
+      cacheOptions: { ttl: durations.YEAR_IN_SECONDS },
+    });
   }
 
   async getQuote(symbol: string) {
@@ -42,11 +48,15 @@ export default class IexCloudApi extends RESTDataSource {
   }
 
   async getPriceOnly(symbol: string) {
-    return this.get(`stock/${symbol}/price`);
+    return this.get(`stock/${symbol}/price`, "", {
+      cacheOptions: { ttl: durations.FIFTEEN_MINUTES_SECONDS },
+    });
   }
 
   async getIntraDayPrices(symbol: string) {
-    return this.get(`stock/${symbol}/intraday-prices`);
+    return this.get(`stock/${symbol}/intraday-prices`, "", {
+      cacheOptions: { ttl: durations.FIFTEEN_MINUTES_SECONDS },
+    });
   }
 
   async getHistoricalPrices(
@@ -59,18 +69,28 @@ export default class IexCloudApi extends RESTDataSource {
       displayPercent?: Boolean;
     }
   ) {
-    return this.get(`stock/${symbol}/chart/${range}`, params);
+    return this.get(`stock/${symbol}/chart/${range}`, params, {
+      cacheOptions: { ttl: durations.FIFTEEN_MINUTES_SECONDS },
+    });
   }
 
   async getNews(symbol: string, last: number) {
-    return this.get(`stock/${symbol}/news/last/${last}`);
+    return this.get(`stock/${symbol}/news/last/${last}`, "", {
+      cacheOptions: { ttl: durations.FIFTEEN_MINUTES_SECONDS },
+    });
   }
 
+  // Very expensive
   async getUpcomingEarnings(symbol: string) {
-    return this.get(`stock/${symbol}/upcoming-earnings`);
+    return this.get(`stock/${symbol}/upcoming-earnings`, "", {
+      cacheOptions: { ttl: durations.MONTH_IN_SECONDS },
+    });
   }
 
+  // Very expensive
   async getUpcomingDividends(symbol: string) {
-    return this.get(`stock/${symbol}/upcoming-earnings`);
+    return this.get(`stock/${symbol}/upcoming-earnings`, "", {
+      cacheOptions: { ttl: durations.MONTH_IN_SECONDS },
+    });
   }
 }
