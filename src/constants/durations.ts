@@ -1,0 +1,4 @@
+export const YEAR_IN_SECONDS = 31536000;
+export const MONTH_IN_SECONDS = 2620000;
+export const DAY_IN_SECONDS = 86400;
+export const FIFTEEN_MINUTES_SECONDS = 900;

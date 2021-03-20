@@ -1,0 +1,386 @@
+[
+  {
+    "key": "marketCap",
+    "name": "Market Cap",
+    "type": "threshold",
+    "description": "Market capitalization refers to the total dollar market value of a company's outstanding shares of stock. Commonly referred to as \"market cap,\" it is calculated by multiplying the total number of a company's outstanding shares by the current market price of one share.\n\nAs an example, a company with 10 million shares selling for $100 each would have a market cap of $1 billion. The investment community uses this figure to determine a company's size, as opposed to using sales or total asset figures. In an acquisition, the market cap is used to determine whether a takeover candidate represents a good value or not to the acquirer.",
+    "investopediaUrl": "https://www.investopedia.com/terms/m/marketcapitalization.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "trailingPE",
+    "name": "Trailing PE Ratio",
+    "type": "threshold",
+    "description": "The price-to-earnings ratio (P/E ratio) is the ratio for valuing a company that measures its current share price relative to its per-share earnings (EPS). The price-to-earnings ratio is also sometimes known as the price multiple or the earnings multiple.\n\nP/E ratios are used by investors and analysts to determine the relative value of a company's shares in an apples-to-apples comparison. It can also be used to compare a company against its own historical record or to compare aggregate markets against one another or over time.",
+    "investopediaUrl": "https://www.investopedia.com/terms/p/price-earningsratio.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "forwardPE",
+    "name": "Forward PE Ratio",
+    "type": "threshold",
+    "description": "The price-to-earnings ratio (P/E ratio) is the ratio for valuing a company that measures its current share price relative to its per-share earnings (EPS). The price-to-earnings ratio is also sometimes known as the price multiple or the earnings multiple.\n\nP/E ratios are used by investors and analysts to determine the relative value of a company's shares in an apples-to-apples comparison. It can also be used to compare a company against its own historical record or to compare aggregate markets against one another or over time.",
+    "investopediaUrl": "https://www.investopedia.com/terms/p/price-earningsratio.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "pegRatio",
+    "name": "PEG Ratio",
+    "type": "threshold",
+    "description": "The price/earnings to growth ratio (PEG ratio) is a stock's price-to-earnings (P/E) ratio divided by the growth rate of its earnings for a specified time period. The PEG ratio is used to determine a stock's value while also factoring in the company's expected earnings growth, and it is thought to provide a more complete picture than the more standard P/E ratio.",
+    "investopediaUrl": "https://www.investopedia.com/terms/p/pegratio.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "priceToSales",
+    "name": "Price/Sales",
+    "type": "threshold",
+    "description": "The price-to-sales (P/S) ratio is a valuation ratio that compares a company’s stock price to its revenues. It is an indicator of the value that financial markets have placed on each dollar of a company’s sales or revenues.\n\nThe P/S ratio can be calculated either by dividing the company’s market capitalization by its total sales over a designated period (usually twelve months) or on a per-share basis by dividing the stock price by sales per share. The P/S ratio is also known as a sales multiple or revenue multiple.",
+    "investopediaUrl": "https://www.investopedia.com/terms/p/price-to-salesratio.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "priceToBook",
+    "name": "Price/Book",
+    "type": "threshold",
+    "description": "Companies use the price-to-book ratio (P/B ratio) to compare a firm's market capitalization to its book value. It's calculated by dividing the company's stock price per share by its book value per share (BVPS). An asset's book value is equal to its carrying value on the balance sheet, and companies calculate it netting the asset against its accumulated depreciation.\n\nBook value is also the tangible net asset value of a company calculated as total assets minus intangible assets (.e.g. patents, goodwill) and liabilities. For the initial outlay of an investment, book value may be net or gross of expenses, such as trading costs, sales taxes, and service charges. Some people may know this ratio by its less common name, the price-equity ratio.",
+    "investopediaUrl": "https://www.investopedia.com/terms/p/price-to-bookratio.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "eps",
+    "name": "EPS",
+    "type": "threshold",
+    "description": "Earnings per share (EPS) is calculated as a company's profit divided by the outstanding shares of its common stock. The resulting number serves as an indicator of a company's profitability. It is common for a company to report EPS that is adjusted for extraordinary items and potential share dilution. The higher a company's EPS, the more profitable it is considered to be.",
+    "investopediaUrl": "https://www.investopedia.com/terms/e/eps.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "enterpriseValue",
+    "name": "Enterprise Value",
+    "type": "threshold",
+    "description": "Enterprise value (EV) is a measure of a company's total value, often used as a more comprehensive alternative to equity market capitalization. EV includes in its calculation the market capitalization of a company but also short-term and long-term debt as well as any cash on the company's balance sheet. Enterprise value is a popular metric used to value a company for a potential takeover.",
+    "investopediaUrl": "https://www.investopedia.com/terms/e/enterprisevalue.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "beta5YMonthly",
+    "name": "Beta (5Y Monthly)",
+    "type": "threshold",
+    "description": "Beta is a measure of the volatility—or systematic risk—of a security or portfolio compared to the market as a whole. Beta is used in the capital asset pricing model (CAPM), which describes the relationship between systematic risk and expected return for assets (usually stocks). CAPM is widely used as a method for pricing risky securities and for generating estimates of the expected returns of assets, considering both the risk of those assets and the cost of capital.",
+    "investopediaUrl": "https://www.investopedia.com/terms/b/beta.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "enterPriseValueToRevenue",
+    "name": "Enterprise Value To Revenue",
+    "type": "threshold",
+    "description": "Enterprise value-to-sales (EV/sales) is a financial valuation measure that compares the enterprise value (EV) of a company to its annual sales. The EV/sales multiple gives investors a quantifiable metric of how to value a company based on its sales, while taking account of both the company's equity and debt.",
+    "investopediaUrl": "https://www.investopedia.com/terms/e/enterprisevaluesales.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "enterPriseValueToEbitda",
+    "name": "Enterprise Value To EBITDA",
+    "type": "threshold",
+    "description": "Enterprise multiple, also known as the EV multiple, is a ratio used to determine the value of a company. The enterprise multiple, which is enterprise value divided by earnings before interest, taxes, depreciation, and amortization (EBITDA), looks at a company the way a potential acquirer would by considering the company's debt. What's considered a good or bad enterprise multiple will depend on the industry.",
+    "investopediaUrl": "https://www.investopedia.com/terms/e/ev-ebitda.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "avgVol3Month",
+    "name": "Avg Volume (3 Month)",
+    "type": "threshold",
+    "description": "Volume is the amount of an asset or security that changes hands over some period of time, often over the course of a day. For instance, stock trading volume would refer to the number of shares of a security traded between its daily open and close. Trading volume, and changes to volume over the course of time, are important inputs for technical traders.",
+    "investopediaUrl": "https://www.investopedia.com/terms/v/volume.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "avgVol10Day",
+    "name": "Avg Volume (10 Day)",
+    "type": "threshold",
+    "description": "Volume is the amount of an asset or security that changes hands over some period of time, often over the course of a day. For instance, stock trading volume would refer to the number of shares of a security traded between its daily open and close. Trading volume, and changes to volume over the course of time, are important inputs for technical traders.",
+    "investopediaUrl": "https://www.investopedia.com/terms/v/volume.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "avgVolume",
+    "name": "Avg Volume",
+    "type": "threshold",
+    "description": "Volume is the amount of an asset or security that changes hands over some period of time, often over the course of a day. For instance, stock trading volume would refer to the number of shares of a security traded between its daily open and close. Trading volume, and changes to volume over the course of time, are important inputs for technical traders.",
+    "investopediaUrl": "https://www.investopedia.com/terms/v/volume.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "sharesOutstanding",
+    "name": "Shares Outstanding",
+    "type": "threshold",
+    "description": "Shares outstanding refer to a company's stock currently held by all its shareholders, including share blocks held by institutional investors and restricted shares owned by the company’s officers and insiders. Outstanding shares are shown on a company’s balance sheet under the heading “Capital Stock.” The number of outstanding shares is used in calculating key metrics such as a company’s market capitalization, as well as its earnings per share (EPS) and cash flow per share (CFPS). A company's number of outstanding shares is not static and may fluctuate wildly over time.",
+    "investopediaUrl": "https://www.investopedia.com/terms/o/outstandingshares.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "float",
+    "name": "Float",
+    "type": "threshold",
+    "description": "Floating stock is the number of shares available for trading of a particular stock. Low float stocks are those with a low number of shares. Floating stock is calculated by subtracting closely-held shares and restricted stock from a firm’s total outstanding shares.",
+    "investopediaUrl": "https://www.investopedia.com/terms/f/floating-stock.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "percentageHeldbyInsiders",
+    "name": "Percentage Held By Insiders",
+    "type": "threshold",
+    "description": "If you're an investor, it pays to know what the company's owners and most important shareholders are doing. By watching the trading activity of corporate insiders and large institutional investors, it's easier to get a sense of a stock's prospects. While insider or institutional ownership on its own is not necessarily a buy or sell signal, it certainly offers a handy first screen in the search for a good investment.",
+    "investopediaUrl": "https://www.investopedia.com/articles/stocks/05/042605.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "percentageHeldByInstitutions",
+    "name": "Percentage Held By Institutions",
+    "type": "threshold",
+    "description": "If you're an investor, it pays to know what the company's owners and most important shareholders are doing. By watching the trading activity of corporate insiders and large institutional investors, it's easier to get a sense of a stock's prospects. While insider or institutional ownership on its own is not necessarily a buy or sell signal, it certainly offers a handy first screen in the search for a good investment.",
+    "investopediaUrl": "https://www.investopedia.com/articles/stocks/05/042605.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "sharesShort",
+    "name": "Shares Short",
+    "type": "threshold",
+    "description": "A short, or a short position, is created when a trader sells a security first with the intention of repurchasing it or covering it later at a lower price. A trader may decide to short a security when she believes that the price of that security is likely to decrease in the near future. There are two types of short positions: naked and covered. A naked short is when a trader sells a security without having possession of it.",
+    "investopediaUrl": "https://www.investopedia.com/terms/s/short.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "shortRatio",
+    "name": "Short Ratio",
+    "type": "threshold",
+    "description": "The short Interest ratio is a simple formula that divides the number of shares short in a stock by the stock's average daily trading volume.",
+    "investopediaUrl": "https://www.investopedia.com/terms/s/short.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "shortPercentageOfFloat",
+    "name": "Short % of Float",
+    "type": "threshold",
+    "description": "A short, or a short position, is created when a trader sells a security first with the intention of repurchasing it or covering it later at a lower price. A trader may decide to short a security when she believes that the price of that security is likely to decrease in the near future. There are two types of short positions: naked and covered. A naked short is when a trader sells a security without having possession of it.",
+    "investopediaUrl": "https://www.investopedia.com/terms/s/short.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "shortPercentageOfSharesOutstanding",
+    "name": "Short % of Shares Outstanding",
+    "type": "threshold",
+    "description": "A short, or a short position, is created when a trader sells a security first with the intention of repurchasing it or covering it later at a lower price. A trader may decide to short a security when she believes that the price of that security is likely to decrease in the near future. There are two types of short positions: naked and covered. A naked short is when a trader sells a security without having possession of it.",
+    "investopediaUrl": "https://www.investopedia.com/terms/s/short.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "forwardAnnualDividendRate",
+    "name": "Forward Annual Dividend Rate",
+    "type": "threshold",
+    "description": "A forward dividend yield is an estimation of a year's dividend expressed as a percentage of the current stock price. The year's projected dividend is measured by taking a stock's most recent actual dividend payment and annualizing it. The forward dividend yield is calculated by dividing a year's worth of future dividend payments by a stock's current share price.",
+    "investopediaUrl": "https://www.investopedia.com/terms/f/forward-dividend-yield.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "forwardAnnualDividendYield",
+    "name": "Forward Annual Dividend Yield",
+    "type": "threshold",
+    "description": "A forward dividend yield is an estimation of a year's dividend expressed as a percentage of the current stock price. The year's projected dividend is measured by taking a stock's most recent actual dividend payment and annualizing it. The forward dividend yield is calculated by dividing a year's worth of future dividend payments by a stock's current share price.",
+    "investopediaUrl": "https://www.investopedia.com/terms/f/forward-dividend-yield.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "trailingAnnualDividendRate",
+    "name": "Trailing Annual Dividend Rate",
+    "type": "threshold",
+    "description": "The opposite of a forward dividend yield is a trailing dividend yield, which shows a company's actual dividend payments relative to its share price over the previous 12 months. When future dividend payments are not predictable, the trailing dividend yield can be one way to measure value. When future dividend payments are predictable or have been announced, the forward dividend yield is a more accurate tool.",
+    "investopediaUrl": "https://www.investopedia.com/terms/f/forward-dividend-yield.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "trailingAnnualDividendYield",
+    "name": "Trailing Annual Dividend Yield",
+    "type": "threshold",
+    "description": "The opposite of a forward dividend yield is a trailing dividend yield, which shows a company's actual dividend payments relative to its share price over the previous 12 months. When future dividend payments are not predictable, the trailing dividend yield can be one way to measure value. When future dividend payments are predictable or have been announced, the forward dividend yield is a more accurate tool.",
+    "investopediaUrl": "https://www.investopedia.com/terms/f/forward-dividend-yield.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "5YearAverageDividendYield",
+    "name": "5 Year Average Dividend Yield",
+    "type": "threshold",
+    "description": "A dividend is the distribution of some of a company's earnings to a class of its shareholders, as determined by the company's board of directors. Common shareholders of dividend-paying companies are typically eligible as long as they own the stock before the ex-dividend date. Dividends may be paid out as cash or in the form of additional stock.",
+    "investopediaUrl": "https://www.investopedia.com/terms/d/dividend.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "payOutRatio",
+    "name": "Payout Ratio",
+    "type": "threshold",
+    "description": "The payout ratio is a financial metric showing the proportion of earnings a company pays shareholders in the form of dividends, expressed as a percentage of the company's total earnings. On some occasions, the payout ratio refers to the dividends paid out as a percentage of a company's cash flow. The payout ratio is also known as the dividend payout ratio.",
+    "investopediaUrl": "https://www.investopedia.com/terms/p/payoutratio.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "profitMargin",
+    "name": "Profit Margin",
+    "type": "threshold",
+    "description": "Profit margin is one of the commonly used profitability ratios to gauge the degree to which a company or a business activity makes money. It represents what percentage of sales has turned into profits. Simply put, the percentage figure indicates how many cents of profit the business has generated for each dollar of sale. For instance, if a business reports that it achieved a 35% profit margin during the last quarter, it means that it had a net income of $0.35 for each dollar of sales generated.",
+    "investopediaUrl": "https://www.investopedia.com/terms/p/profitmargin.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "operatingMargin",
+    "name": "Operating Margin",
+    "type": "threshold",
+    "description": "Operating margin measures how much profit a company makes on a dollar of sales after paying for variable costs of production, such as wages and raw materials, but before paying interest or tax. It is calculated by dividing a company’s operating income by its net sales. Higher ratios are generally better, meaning the company is efficient in its operations and is good at turning sales into profits.",
+    "investopediaUrl": "https://www.investopedia.com/terms/o/operatingmargin.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "returnOnAssets",
+    "name": "Return On Assets",
+    "type": "threshold",
+    "description": "Return on assets (ROA) is an indicator of how profitable a company is relative to its total assets. ROA gives a manager, investor, or analyst an idea as to how efficient a company's management is at using its assets to generate earnings. Return on assets is displayed as a percentage; the higher the ROA the better.",
+    "investopediaUrl": "https://www.investopedia.com/terms/r/returnonassets.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "returnOnEquity",
+    "name": "Return On Equity",
+    "type": "threshold",
+    "description": "Return on equity (ROE) is a measure of financial performance calculated by dividing net income by shareholders' equity. Because shareholders' equity is equal to a company’s assets minus its debt, ROE is considered the return on net assets. ROE is considered a measure of the profitability of a corporation in relation to stockholders’ equity.",
+    "investopediaUrl": "https://www.investopedia.com/terms/r/returnonequity.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "revenue",
+    "name": "Revenue",
+    "type": "threshold",
+    "description": "Revenue is the income generated from normal business operations and includes discounts and deductions for returned merchandise. It is the top line or gross income figure from which costs are subtracted to determine net income.",
+    "investopediaUrl": "https://www.investopedia.com/terms/r/revenue.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "revenuePerShare",
+    "name": "Revenue Per Share",
+    "type": "threshold",
+    "description": "Sales per share is a ratio that computes the total revenue earned per share over a designated period, whether quarterly, semi-annually, annually, or trailing twelve months (TTM). It is calculated by dividing total revenue by average total shares outstanding. It is also known as revenue per share.",
+    "investopediaUrl": "https://www.investopedia.com/terms/s/salespershare.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "quarterlyRevenueGrowth",
+    "name": "Quarterly Revenue Growth",
+    "type": "threshold",
+    "description": "Quarterly revenue growth is an increase in a company's sales in one quarter compared to sales of a different quarter. The current quarter's sales figure can be compared on a year-over-year basis (e.g., 3Q sales of Year 1 compared with 3Q sales of Year 2) or sequentially (3Q sales of Year 1 compared with 4Q sales of Year 1). This gives analysts, investors, and additional stakeholders an idea of how much a company's sales are increasing over time.",
+    "investopediaUrl": "https://www.investopedia.com/terms/q/quarterlyrevenuegrowth.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "grossProfit",
+    "name": "Gross Profit",
+    "type": "threshold",
+    "description": "Gross profit is the profit a company makes after deducting the costs associated with making and selling its products, or the costs associated with providing its services. Gross profit will appear on a company's income statement and can be calculated by subtracting the cost of goods sold (COGS) from revenue (sales). These figures can be found on a company's income statement.",
+    "investopediaUrl": "https://www.investopedia.com/terms/g/grossprofit.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "ebitda",
+    "name": "EBITDA",
+    "type": "threshold",
+    "description": "EBITDA, or earnings before interest, taxes, depreciation, and amortization, is a measure of a company's overall financial performance and is used as an alternative to net income in some circumstances. EBITDA, however, can be misleading because it strips out the cost of capital investments like property, plant, and equipment.",
+    "investopediaUrl": "https://www.investopedia.com/terms/e/ebitda.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "netIncomeAviToCommon",
+    "name": "Net Income Avi to Common",
+    "type": "threshold",
+    "description": "Net income (NI), also called net earnings, is calculated as sales minus cost of goods sold, selling, general and administrative expenses, operating expenses, depreciation, interest, taxes, and other expenses. It is a useful number for investors to assess how much revenue exceeds the expenses of an organization. This number appears on a company's income statement and is also an indicator of a company's profitability.",
+    "investopediaUrl": "https://www.investopedia.com/terms/n/netincome.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "dilutedEps",
+    "name": "Diluted EPS",
+    "type": "threshold",
+    "description": "Diluted EPS is a calculation used to gauge the quality of a company's earnings per share (EPS) if all convertible securities were exercised. Convertible securities are all outstanding convertible preferred shares, convertible debentures, stock options, and warrants. The diluted EPS will usually be lower than the simple or basic EPS but in the rare case that there are anti-dilutive securities it may be higher. In this case only the basic EPS is reported in the financial statements.",
+    "investopediaUrl": "https://www.investopedia.com/terms/d/dilutedeps.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "quarterlyEarningsGrowth",
+    "name": "Quarterly Earnings Growth",
+    "type": "threshold",
+    "description": "Quarterly revenue growth is an increase in a company's sales in one quarter compared to sales of a different quarter. The current quarter's sales figure can be compared on a year-over-year basis (e.g., 3Q sales of Year 1 compared with 3Q sales of Year 2) or sequentially (3Q sales of Year 1 compared with 4Q sales of Year 1). This gives analysts, investors, and additional stakeholders an idea of how much a company's sales are increasing over time.",
+    "investopediaUrl": "https://www.investopedia.com/terms/q/quarterlyrevenuegrowth.asp",
+    "valueType": "percentage"
+  },
+  {
+    "key": "totalCash",
+    "name": "Total Cash",
+    "type": "threshold",
+    "description": "Cash flow is the net amount of cash and cash-equivalents being transferred into and out of a business. At the most fundamental level, a company’s ability to create value for shareholders is determined by its ability to generate positive cash flows, or more specifically, maximize long-term free cash flow (FCF).",
+    "investopediaUrl": "https://www.investopedia.com/terms/c/cashflow.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "totalCashPerShare",
+    "name": "Total Cash Per Share",
+    "type": "threshold",
+    "description": "Cash per share is a financial ratio that can be calculated by tallying up a company's total cash on its balance sheet, including easy to liquidate short-term investments, and then dividing that figure by the number of shares outstanding. The resulting figure indicates the percentage of a company’s share price that's immediately accessible for spending on activities such as research and development (R&D), mergers and acquisitions (M&A), purchasing or improving assets, paying down debt, buying back shares, and making dividend payments to shareholders.",
+    "investopediaUrl": "https://www.investopedia.com/terms/c/cash-per-share.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "totalDebt",
+    "name": "Total Debt",
+    "type": "threshold",
+    "description": "Net debt is a liquidity metric used to determine how well a company can pay all of its debts if they were due immediately. Net debt shows much debt a company has on its balance sheet compared to its liquid assets. Net debt shows how much cash would remain if all debts were paid off and if a company has enough liquidity to meet its debt obligations.",
+    "investopediaUrl": "https://www.investopedia.com/terms/n/netdebt.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "totalDebtPerEquity",
+    "name": "Total Debt Per Equity",
+    "type": "threshold",
+    "description": "The debt-to-equity (D/E) ratio is calculated by dividing a company’s total liabilities by its shareholder equity. These numbers are available on the balance sheet of a company’s financial statements.",
+    "investopediaUrl": "https://www.investopedia.com/terms/d/debtequityratio.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "currentRatio",
+    "name": "Current Ratio",
+    "type": "threshold",
+    "description": "The current ratio is a liquidity ratio that measures a company's ability to pay short-term obligations or those due within one year. It tells investors and analysts how a company can maximize the current assets on its balance sheet to satisfy its current debt and other payables.",
+    "investopediaUrl": "https://www.investopedia.com/terms/c/currentratio.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "bookValuePerShare",
+    "name": "Book Value Per Share",
+    "type": "threshold",
+    "description": "Book value per share (BVPS) is the ratio of equity available to common shareholders divided by the number of outstanding shares. This figure represents the minimum value of a company's equity and measures the book value of a firm on a per-share basis.",
+    "investopediaUrl": "https://www.investopedia.com/terms/b/bvps.asp",
+    "valueType": "number"
+  },
+  {
+    "key": "operatingCashFlow",
+    "name": "Operating Cash Flow",
+    "type": "threshold",
+    "description": "Operating cash flow (OCF) is a measure of the amount of cash generated by a company's normal business operations. Operating cash flow indicates whether a company can generate sufficient positive cash flow to maintain and grow its operations, otherwise, it may require external financing for capital expansion.",
+    "investopediaUrl": "https://www.investopedia.com/terms/o/operatingcashflow.asp",
+    "valueType": "bigNumber"
+  },
+  {
+    "key": "leveredFreeCashFlow",
+    "name": "Levered Free Cash Flow",
+    "type": "threshold",
+    "description": "Levered free cash flow (LFCF) is the amount of money a company has left remaining after paying all of its financial obligations. LFCF is the amount of cash a company has after paying debts, while unlevered free cash flow (UFCF) is cash before debt payments are made. Levered free cash flow is important because it is the amount of cash that a company can use to pay dividends and make investments in the business.",
+    "investopediaUrl": "https://www.investopedia.com/terms/l/levered-free-cash-flow.asp",
+    "valueType": "bigNumber"
+  }
+]
