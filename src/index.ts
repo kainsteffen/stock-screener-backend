@@ -28,6 +28,8 @@ const server = new ApolloServer({
       indicators: new Indicators(client.db().collection("indicators")),
     };
   },
+  introspection: true,
+  playground: true,
   // cache: new RedisCache({
   //   host: "redis-server",
   //   // Options are passed through to the Redis client
